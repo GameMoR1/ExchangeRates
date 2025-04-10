@@ -13,8 +13,8 @@ namespace Testing
     {
         private string _baseCurrency = "USD"; // Базовая валюта по умолчанию
 
-        private string _githubRepoUrl = "https://api.github.com/repos/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME";
-        private string _apkDownloadUrl = "https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/releases/latest/download/app.apk";
+        private string _githubRepoUrl = "https://api.github.com/repos/GameMoR1/ExchangeRates";
+        private string _apkDownloadUrl = "https://github.com/GameMoR1/ExchangeRates/Testing/Testing.Android/bin/Release/com.companyname.testing-Signed.apk";
 
         public MainPage()
         {
@@ -22,7 +22,7 @@ namespace Testing
             BindingContext = this;
 
             LoadCurrenciesAsync();
-            //CheckForUpdates();
+            CheckForUpdates();
         }
 
         private async void CheckForUpdates()

@@ -48,9 +48,10 @@
               "RelativeDocumentMoniker": "Testing\\Testing\\UpdateManager.cs",
               "ToolTip": "C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\Testing\\Testing\\UpdateManager.cs",
               "RelativeToolTip": "Testing\\Testing\\UpdateManager.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwBIAAAArAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAzwBIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T06:41:48.013Z"
+              "WhenOpened": "2025-04-10T06:41:48.013Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,7 +61,7 @@
               "RelativeDocumentMoniker": "Testing\\Testing\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\Testing\\Testing\\MainPage.xaml.cs",
               "RelativeToolTip": "Testing\\Testing\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAiAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T06:43:54.456Z",
               "EditorCaption": ""

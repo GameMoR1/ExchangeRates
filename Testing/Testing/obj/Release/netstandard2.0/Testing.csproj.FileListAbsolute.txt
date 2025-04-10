@@ -28,3 +28,4 @@ C:\Users\akorn\source\repos\ExchangeRates\ExchangeRates\Testing\Testing\obj\Rele
 C:\Users\akorn\source\repos\ExchangeRates\ExchangeRates\Testing\Testing\obj\Release\netstandard2.0\Testing.dll
 C:\Users\akorn\source\repos\ExchangeRates\ExchangeRates\Testing\Testing\obj\Release\netstandard2.0\refint\Testing.dll
 C:\Users\akorn\source\repos\ExchangeRates\ExchangeRates\Testing\Testing\obj\Release\netstandard2.0\Testing.pdb
+C:\Users\akorn\source\repos\ExchangeRates\ExchangeRates\Testing\Testing\obj\Release\netstandard2.0\Testing.sourcelink.json
