@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Testing.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Label Text="Currency Exchange" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <!-- Поле ввода для поиска валюты -->
+        <Entry x:Name="SearchEntry"
+               Placeholder="Введите код валюты (например: EUR)"
+               Margin="10,10,10,0"/>
+
+        <!-- Кнопка для поиска -->
+        <Button x:Name="SearchButton" 
+                Text="Найти курс"
+                Clicked="SearchButton_Clicked"
+                Margin="10,10,10,0"/>
+
+        <!-- Выпадающий список -->
+        <Picker x:Name="CurrencyPicker"
+                Title="Или выберите из списка"
+                ItemsSource="{Binding FilteredCurrencyList}"
+                SelectedItem="{Binding SelectedCurrency, Mode=TwoWay}"
+                Margin="10,10,10,0"
+                SelectedIndexChanged="CurrencyPicker_SelectedIndexChanged"/>
+
+        <!-- Поле ввода для количества долларов -->
+        <Entry x:Name="AmountEntry"
+               Placeholder="Введите количество долларов"
+               Keyboard="Numeric"
+               Margin="10,10,10,0"/>
+
+        <Label x:Name="CounterLabel" 
+               Text="Выберите валюту" 
+               FontSize="16" 
+               Padding="30,24,30,0"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,15 @@
+C:\Users\akorn\source\repos\Testing\Testing\Testing\bin\Debug\netstandard2.0\Testing.deps.json
+C:\Users\akorn\source\repos\Testing\Testing\Testing\bin\Debug\netstandard2.0\Testing.dll
+C:\Users\akorn\source\repos\Testing\Testing\Testing\bin\Debug\netstandard2.0\ref\Testing.dll
+C:\Users\akorn\source\repos\Testing\Testing\Testing\bin\Debug\netstandard2.0\Testing.pdb
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.csproj.AssemblyReference.cache
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.AssemblyInfoInputs.cache
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.AssemblyInfo.cs
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.csproj.CoreCompileInputs.cache
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.dll
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\refint\Testing.dll
+C:\Users\akorn\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.pdb
