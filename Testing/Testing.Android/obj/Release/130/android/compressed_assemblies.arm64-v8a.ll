@@ -30,7 +30,7 @@ target triple = "aarch64-unknown-linux-android"
 @__CompressedAssemblyDescriptor_data_13 = internal global [1397760 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_14 = internal global [877568 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_15 = internal global [442368 x i8] zeroinitializer, align 1
-@__CompressedAssemblyDescriptor_data_16 = internal global [23552 x i8] zeroinitializer, align 1
+@__CompressedAssemblyDescriptor_data_16 = internal global [25088 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_17 = internal global [53248 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_18 = internal global [16896 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_19 = internal global [463360 x i8] zeroinitializer, align 1
@@ -56,7 +56,7 @@ target triple = "aarch64-unknown-linux-android"
 @__CompressedAssemblyDescriptor_data_39 = internal global [103424 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_40 = internal global [258048 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_41 = internal global [18072 x i8] zeroinitializer, align 1
-@__CompressedAssemblyDescriptor_data_42 = internal global [2110464 x i8] zeroinitializer, align 1
+@__CompressedAssemblyDescriptor_data_42 = internal global [2111488 x i8] zeroinitializer, align 1
 
 
 ; Compressed assembly data storage
@@ -159,9 +159,9 @@ target triple = "aarch64-unknown-linux-android"
 	}, 
 	; 16
 	%struct.CompressedAssemblyDescriptor {
-		i32 23552, ; uncompressed_file_size
+		i32 25088, ; uncompressed_file_size
 		i8 0, ; loaded
-		i8* getelementptr inbounds ([23552 x i8], [23552 x i8]* @__CompressedAssemblyDescriptor_data_16, i32 0, i32 0); data
+		i8* getelementptr inbounds ([25088 x i8], [25088 x i8]* @__CompressedAssemblyDescriptor_data_16, i32 0, i32 0); data
 	}, 
 	; 17
 	%struct.CompressedAssemblyDescriptor {
@@ -315,9 +315,9 @@ target triple = "aarch64-unknown-linux-android"
 	}, 
 	; 42
 	%struct.CompressedAssemblyDescriptor {
-		i32 2110464, ; uncompressed_file_size
+		i32 2111488, ; uncompressed_file_size
 		i8 0, ; loaded
-		i8* getelementptr inbounds ([2110464 x i8], [2110464 x i8]* @__CompressedAssemblyDescriptor_data_42, i32 0, i32 0); data
+		i8* getelementptr inbounds ([2111488 x i8], [2111488 x i8]* @__CompressedAssemblyDescriptor_data_42, i32 0, i32 0); data
 	}
 ], align 8; end of 'compressed_assembly_descriptors' array
 

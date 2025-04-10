@@ -21,17 +21,47 @@ namespace Testing
             InitializeComponent();
             BindingContext = this;
 
-            LoadCurrenciesAsync();
-            CheckForUpdates();
+            // Показываем анимацию во время проверки обновлений
+            ShowUpdateAnimation();
+
+            CheckForUpdates().ContinueWith(async (task) =>
+            {
+                await Task.Run(async () =>
+                {
+                    await LoadCurrenciesAsync();
+                });
+            });
         }
 
-        private async void CheckForUpdates()
+        private async Task CheckForUpdates()
         {
-            await Task.Run(async () =>
+            try
             {
                 var updateManager = new UpdateManager(_githubRepoUrl, _apkDownloadUrl);
                 await updateManager.CheckForUpdatesAsync();
-            });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка обновления: {ex.Message}");
+            }
+            finally
+            {
+                HideUpdateAnimation();
+            }
+        }
+
+        private void ShowUpdateAnimation()
+        {
+            // Добавьте анимацию здесь, например, ActivityIndicator
+            updateActivityIndicator.IsVisible = true;
+            updateActivityIndicator.IsRunning = true;
+        }
+
+        private void HideUpdateAnimation()
+        {
+            // Уберите анимацию здесь
+            updateActivityIndicator.IsVisible = false;
+            updateActivityIndicator.IsRunning = false;
         }
 
         private List<string> _currencyList = new List<string>();

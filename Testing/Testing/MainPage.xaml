@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Testing.MainPage">
 
@@ -7,6 +6,14 @@
         <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
             <Label Text="Currency Exchange" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
+
+        <!-- Анимация во время проверки обновлений -->
+        <ActivityIndicator x:Name="updateActivityIndicator"
+                           IsVisible="False"
+                           IsRunning="False"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Margin="10,10,10,0"/>
 
         <!-- Выпадающий список для выбора базовой валюты -->
         <Picker x:Name="BaseCurrencyPicker"
