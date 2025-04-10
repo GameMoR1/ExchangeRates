@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{B37EB22F-7B46-45E7-80B7-F67D92995389}|Testing\\Testing\\Testing.csproj|solutionrelative:testing\\testing\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B37EB22F-7B46-45E7-80B7-F67D92995389}|Testing\\Testing\\Testing.csproj|C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\testing\\testing\\updatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B37EB22F-7B46-45E7-80B7-F67D92995389}|Testing\\Testing\\Testing.csproj|solutionrelative:testing\\testing\\updatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B37EB22F-7B46-45E7-80B7-F67D92995389}|Testing\\Testing\\Testing.csproj|C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\testing\\testing\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
       "RelativeMoniker": "D:0:0:{B37EB22F-7B46-45E7-80B7-F67D92995389}|Testing\\Testing\\Testing.csproj|solutionrelative:testing\\testing\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B37EB22F-7B46-45E7-80B7-F67D92995389}|Testing\\Testing\\Testing.csproj|C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\testing\\testing\\updatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B37EB22F-7B46-45E7-80B7-F67D92995389}|Testing\\Testing\\Testing.csproj|solutionrelative:testing\\testing\\updatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B37EB22F-7B46-45E7-80B7-F67D92995389}|Testing\\Testing\\Testing.csproj|C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\testing\\testing\\testing.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -42,13 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UpdateManager.cs",
               "DocumentMoniker": "C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\Testing\\Testing\\UpdateManager.cs",
               "RelativeDocumentMoniker": "Testing\\Testing\\UpdateManager.cs",
               "ToolTip": "C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\Testing\\Testing\\UpdateManager.cs",
               "RelativeToolTip": "Testing\\Testing\\UpdateManager.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAzwBIAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T06:41:48.013Z",
               "EditorCaption": ""
@@ -61,22 +61,23 @@
               "RelativeDocumentMoniker": "Testing\\Testing\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\Testing\\Testing\\MainPage.xaml.cs",
               "RelativeToolTip": "Testing\\Testing\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAZAAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAmwHIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T06:43:54.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\Testing\\Testing\\MainPage.xaml",
               "RelativeDocumentMoniker": "Testing\\Testing\\MainPage.xaml",
               "ToolTip": "C:\\Users\\akorn\\source\\repos\\ExchangeRates\\ExchangeRates\\Testing\\Testing\\MainPage.xaml",
               "RelativeToolTip": "Testing\\Testing\\MainPage.xaml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAuwB4AAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-01T06:43:02.502Z"
+              "WhenOpened": "2025-04-01T06:43:02.502Z",
+              "EditorCaption": ""
             }
           ]
         }

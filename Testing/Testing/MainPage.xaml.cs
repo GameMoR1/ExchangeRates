@@ -110,6 +110,11 @@ namespace Testing
             }
         }
 
+        private void BaseCurrencyPicker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void CurrencyPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateLabel();

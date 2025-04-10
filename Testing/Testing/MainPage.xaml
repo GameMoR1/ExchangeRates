@@ -8,6 +8,14 @@
             <Label Text="Currency Exchange" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
 
+        <!-- Выпадающий список для выбора базовой валюты -->
+        <Picker x:Name="BaseCurrencyPicker"
+                Title="Выберите базовую валюту"
+                ItemsSource="{Binding CurrencyList}"
+                SelectedItem="{Binding BaseCurrency, Mode=TwoWay}"
+                Margin="10,10,10,0"
+                SelectedIndexChanged="BaseCurrencyPicker_SelectedIndexChanged"/>
+
         <!-- Поле ввода для поиска валюты -->
         <Entry x:Name="SearchEntry"
                Placeholder="Введите код валюты (например: EUR)"
