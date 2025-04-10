@@ -1,11 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.IO;
 using Xamarin.Essentials;
-using Xamarin.Forms;
 
 namespace Testing
 {
@@ -13,29 +11,31 @@ namespace Testing
     {
         private string _githubRepoUrl;
         private string _apkDownloadUrl;
+        private string _currentVersion;
 
-        public UpdateManager(string githubRepoUrl, string apkDownloadUrl)
+        public UpdateManager(string githubRepoUrl, string apkDownloadUrl, string currentVersion)
         {
             _githubRepoUrl = githubRepoUrl;
             _apkDownloadUrl = apkDownloadUrl;
+            _currentVersion = currentVersion;
         }
 
         public async Task CheckForUpdatesAsync()
         {
             try
             {
-                var lastCheckedHash = Preferences.Get("last_commit_hash", "");
                 var client = new HttpClient();
                 client.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0");
 
-                var response = await client.GetAsync(_githubRepoUrl + "/commits?per_page=1");
+                // Для примера, предположим, что версия приложения хранится в файле на GitHub
+                var response = await client.GetAsync(_githubRepoUrl + "/version.txt");
 
                 if (response.IsSuccessStatusCode)
                 {
                     var responseBody = await response.Content.ReadAsStringAsync();
-                    var commits = JsonConvert.DeserializeObject<List<Commit>>(responseBody);
+                    var latestVersion = responseBody.Trim();
 
-                    if (commits?.Count > 0 && commits[0].Sha != lastCheckedHash)
+                    if (latestVersion != _currentVersion)
                     {
                         var update = await App.Current.MainPage.DisplayAlert("Обновление",
                             "Доступна новая версия приложения. Обновить сейчас?",
@@ -44,14 +44,13 @@ namespace Testing
                         if (update)
                         {
                             await DownloadAndInstallUpdateAsync();
-                            Preferences.Set("last_commit_hash", commits[0].Sha);
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                //Console.WriteLine($"Update check failed: {ex.Message}");
+                Console.WriteLine($"Update check failed: {ex.Message}");
             }
         }
 
@@ -86,11 +85,6 @@ namespace Testing
             {
                 await App.Current.MainPage.DisplayAlert("Ошибка", $"Не удалось установить обновление: {ex.Message}", "OK");
             }
-        }
-
-        private class Commit
-        {
-            public string Sha { get; set; }
         }
     }
 }

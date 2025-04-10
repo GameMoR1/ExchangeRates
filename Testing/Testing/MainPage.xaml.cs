@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace Testing
 {
@@ -13,22 +14,25 @@ namespace Testing
     {
         private string _baseCurrency = "USD"; // Базовая валюта по умолчанию
 
-        private string _githubRepoUrl = "https://api.github.com/repos/GameMoR1/ExchangeRates";
+        private string _githubRepoUrl = "https://github.com/GameMoR1/ExchangeRates/tree/main";
         private string _apkDownloadUrl = "https://github.com/GameMoR1/ExchangeRates/blob/main/Testing/Testing.Android/bin/Release/com.companyname.testing-Signed.apk";
+        private string version = "0.1.2";
 
         public MainPage()
         {
             InitializeComponent();
             BindingContext = this;
 
-            // Показываем анимацию во время проверки обновлений
-            ShowUpdateAnimation();
-
-            CheckForUpdates().ContinueWith(async (task) =>
+            RequestPermissionsAsync().ContinueWith((task) =>
             {
-                await Task.Run(async () =>
+                ShowUpdateAnimation();
+
+                CheckForUpdates().ContinueWith((updateTask) =>
                 {
-                    await LoadCurrenciesAsync();
+                    Device.BeginInvokeOnMainThread(() =>
+                    {
+                        HideUpdateAnimation();
+                    });
                 });
             });
         }
@@ -37,18 +41,37 @@ namespace Testing
         {
             try
             {
-                var updateManager = new UpdateManager(_githubRepoUrl, _apkDownloadUrl);
+                var updateManager = new UpdateManager(_githubRepoUrl, _apkDownloadUrl, version);
                 await updateManager.CheckForUpdatesAsync();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ошибка обновления: {ex.Message}");
-            }
-            finally
-            {
-                HideUpdateAnimation();
+                CounterLabel.Text = ($"Ошибка обновления: {ex.Message}");
             }
         }
+
+        private async Task RequestPermissionsAsync()
+        {
+            try
+            {
+                // Запрашиваем доступ к хранилищу
+                var storagePermissionStatus = await Permissions.CheckStatusAsync<Permissions.StorageWrite>();
+                if (storagePermissionStatus != PermissionStatus.Granted)
+                {
+                    var newStoragePermissionStatus = await Permissions.RequestAsync<Permissions.StorageWrite>();
+                    if (newStoragePermissionStatus != PermissionStatus.Granted)
+                    {
+                        await DisplayAlert("Ошибка", "Не удалось получить доступ к хранилищу.", "OK");
+                        return;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                CounterLabel.Text = ($"Ошибка запроса прав: {ex.Message}");
+            }
+        }
+
 
         private void ShowUpdateAnimation()
         {
