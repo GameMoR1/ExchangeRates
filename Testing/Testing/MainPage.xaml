@@ -44,7 +44,7 @@
 
         <!-- Поле ввода для количества долларов -->
         <Entry x:Name="AmountEntry"
-               Placeholder="Введите количество долларов"
+               Placeholder="Введите количество базовой валюты"
                Keyboard="Numeric"
                Margin="10,10,10,0"/>
 
