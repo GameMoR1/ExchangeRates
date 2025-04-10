@@ -14,7 +14,7 @@ namespace Testing
         private string _baseCurrency = "USD"; // Базовая валюта по умолчанию
 
         private string _githubRepoUrl = "https://api.github.com/repos/GameMoR1/ExchangeRates";
-        private string _apkDownloadUrl = "https://github.com/GameMoR1/ExchangeRates/Testing/Testing.Android/bin/Release/com.companyname.testing-Signed.apk";
+        private string _apkDownloadUrl = "https://github.com/GameMoR1/ExchangeRates/blob/main/Testing/Testing.Android/bin/Release/com.companyname.testing-Signed.apk";
 
         public MainPage()
         {
